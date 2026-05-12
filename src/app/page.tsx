@@ -1,3 +1,5 @@
 export default function Home() {
-  return <div className="pt-10 text-center text-xl">hello world</div>;
+  return (
+    <div className="w-[calc(100%-80px)] text-center text-xl">hello world</div>
+  );
 }
