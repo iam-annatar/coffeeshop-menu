@@ -3,5 +3,20 @@
   "language": "fa,en",
   "useGitignore": true,
   "import": ["@cspell/dict-fa-ir/cspell-ext.json"],
-  "ignorePaths": ["node_modules", "dist", "build", "public", "*.json", "*.yaml"]
+  "ignorePaths": [
+    "node_modules",
+    "dist",
+    "build",
+    "public",
+    "*.json",
+    "*.yaml"
+  ],
+  "dictionaryDefinitions": [
+    {
+      "name": "keywords",
+      "description": "Project keywords",
+      "path": "./keywords.txt"
+    }
+  ],
+  "dictionaries": ["keywords"]
 }
