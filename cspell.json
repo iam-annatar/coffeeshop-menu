@@ -9,7 +9,9 @@
     "build",
     "public",
     "*.json",
-    "*.yaml"
+    "*.yaml",
+    "./src/components/Sidebar/constants.ts",
+    "./src/components/MainMenu/constants.ts"
   ],
   "dictionaryDefinitions": [
     {

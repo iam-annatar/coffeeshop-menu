@@ -3,10 +3,9 @@
 :root {
   --background: #0a0a0a;
   --foreground: #d3dad9;
-  --primary: #242327;
-  --muted: #2b2b31;
-  --brand: #715a5a;
-  --maxwidth: 800px;
+  --primary: #151416;
+  --muted: #1e1e22;
+  --brand: #b87426;
   --primary-font: "Estedad", sans-serif;
 }
 
@@ -16,8 +15,8 @@
   --color-primary: var(--primary);
   --color-muted: var(--muted);
   --color-brand: var(--brand);
-  --width-main: var(--maxwidth);
   --font-primary: var(--primary-font);
+  --breakpoint-tablet: 600px;
 }
 
 @keyframes scale-in {
@@ -31,13 +30,28 @@
   }
 }
 
+@keyframes fade-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
 @utility animate-scale-in {
   animation: scale-in 0.5s ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
+@utility animate-fade-in {
+  animation: fade-in 0.8s ease-in-out;
+  /* animation-iteration-count: 1; */
+}
+
 body {
-  background: var(--primary);
+  /* background: var(--primary); */
+  font-family: var(--primary-font) sans-serif;
   color: var(--foreground);
 }

@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 const estedadFont = localFont({
   src: "../assets/fonts/Variable/Estedad-FD[KSHD,wght].ttf",
   display: "swap",
+  preload: false,
 });
 
 export default function RootLayout({
@@ -21,13 +22,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa" className={estedadFont.className}>
-      <body className="">
-        <main>
-          <div className="bg-primary min-h-screen w-full">
+    <html lang="fa">
+      <body className={estedadFont.className}>
+        <main className="bg-primary relative mx-auto w-full max-w-[800px]">
+          <div className="h-screen w-[calc(100%-80px)] overflow-y-auto">
             {children}
-            <Sidebar />
           </div>
+          <Sidebar />
         </main>
       </body>
     </html>
