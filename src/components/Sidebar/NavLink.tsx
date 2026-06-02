@@ -12,7 +12,7 @@ const NavLink = (props: NavLinkProps) => {
   return (
     <div
       className={clsx(
-        "flex items-center",
+        "flex cursor-pointer items-center",
         isSidebarExtended ? "justify-start gap-2" : "",
       )}
     >
@@ -22,15 +22,15 @@ const NavLink = (props: NavLinkProps) => {
           isSidebarExtended
             ? "max-w-fit opacity-100 delay-200"
             : "max-w-0 opacity-0 delay-0",
-          isActive ? "font-bold text-white" : "text-foreground font-normal",
+          isActive ? "text-brand font-bold" : "text-foreground font-normal",
         )}
       >
         {name}
       </span>
       <div
         className={clsx(
-          "z-10 cursor-pointer transition-all duration-300 *:size-10",
-          isActive ? "scale-[1.3] *:text-white" : "*:text-foreground",
+          "z-10 transition-all duration-300 *:size-10",
+          isActive ? "*:text-brand scale-[1.3]" : "*:text-foreground",
         )}
       >
         {icon}

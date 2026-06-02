@@ -12,18 +12,23 @@ import {
 
 export const navLinks: NavLinkItem[] = [
   {
-    name: "قهوه",
-    slug: "coffee",
+    name: "بار گرم قهوه",
+    slug: "hot-coffee",
     icon: <Coffee />,
   },
   {
-    name: "نوشیدنی گرم",
+    name: "بار سرد قهوه",
+    slug: "cold-coffee",
+    icon: <ColdDrink />,
+  },
+  {
+    name: "بار گرم",
     slug: "warm",
     icon: <HotDrink />,
   },
   {
-    name: "نوشیدنی سرد",
-    slug: "cold",
+    name: "نوشیدنی طبیعی",
+    slug: "juice",
     icon: <ColdDrink />,
   },
   {
