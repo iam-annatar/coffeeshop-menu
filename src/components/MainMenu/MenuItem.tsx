@@ -1,4 +1,4 @@
-import type { MenuListItem } from ".";
+import type { MenuListItem } from "./constants";
 
 const MenuItem = (props: MenuListItem) => {
   const { name, price } = props;
